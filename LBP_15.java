@@ -18,9 +18,13 @@ class LBP_15
 			while(number>0)
 			{
 				int reminder = number%10;
-				
+				if(reminder==0){
+					System.out.println("Yes");
+					return;
+				}
 				number/=10;
 			}
+			System.out.println("No");
 
 		}catch(IOException exception)
 		{
